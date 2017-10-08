@@ -1,0 +1,341 @@
+/* common */
+html{
+	font-size: 100px;
+	width: 100%;
+}
+body{
+	width: 100%;
+	font-size: 0.12rem;
+	background: #e7e7e7;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+	/* header */
+	header{
+		width: 100%;
+		height: 0.38rem;
+		background: #fe5400;
+		overflow: hidden;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+	}
+	header>img{
+		width: 0.27rem;
+		height: 0.21rem;
+		float: left;
+		margin:0.09rem 0.05rem;
+	}
+	header>.search{
+		width: 87%;
+		height: 0.25rem;
+		background: #b52600;
+		margin: 0.07rem auto 0.06rem;
+		border-radius: 0.03rem;
+		float: left;
+	}
+	header>.search>span{
+		display: block;
+		width: 0.99rem;
+		height: 100%;
+		margin: 0 auto;
+		font: 0.13rem/0.25rem "微软雅黑";
+		color: #F0E0DC;
+	}
+	header>.search>span i{
+		font-size: 0.18rem;
+	}
+	/* banner */
+	.banner{
+		width: 100%;
+		position: relative;
+	}
+	.banner img{
+		width: 100%;
+		margin-top: 0.38rem;
+	}
+	.banner ol{
+		width: 30%;
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		bottom: 0.11rem;
+		right: 0.04rem;
+	}
+	.banner ol li{
+		width: 0.1rem;
+		height: 0.11rem;
+		box-sizing: border-box;
+		background: rgba(255, 255, 255, .6);
+		border: 1px solid rgba(0,0,0,.1);
+		border-radius:  50%;
+	}
+	.banner ol li a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.banner ol li:hover{
+		background: #ff5501;
+	}
+	/* nav */
+	nav{
+		width: 100%;
+		background: #fff;
+		box-shadow: 0 0.1px 1px #e8cdcd;
+		margin-bottom: 0.06rem;
+	}
+
+	nav>ul{
+		width: 100%;
+		display: flex;
+	}
+	nav>ul:nth-child(2){
+		margin-bottom: 0.11rem;
+	}
+	nav>ul>li{
+		flex: 1;
+		padding:0 7px 0;
+	}	
+	nav>ul>li a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	nav>ul>li a img{
+		width: 100%;
+		margin-top: 0.11rem;
+		margin-bottom: 0.06rem;
+
+	}
+	nav>ul>li a p{
+		width: 100%;
+		text-align: center;
+		color: #5d656b;
+		font-size: 0.12rem;
+	}
+	nav div.toutiao{
+		width: 100%;
+		height: auto;
+		border-top: 1px solid #e7e7e7;
+	}
+	nav .toutiao ul{
+		width: 100%;
+		display: flex;
+	}
+	nav .toutiao ul li{
+		box-sizing: border-box;
+	}
+	nav .toutiao ul li:nth-child(1){
+		flex: 19%;
+		border-right:1px solid rgb(232, 232, 232);
+		padding: 5px;
+	}
+	nav .toutiao ul li:nth-child(1) a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	nav .toutiao ul li:nth-child(1) a img{
+		width: 100%;
+		height: 100%;
+	}
+	nav .toutiao ul li:nth-child(2){
+		width: 14%;
+	}
+	nav .toutiao ul li:nth-child(2) a{
+		display: block;
+		width: 70%;
+		color: rgb(216, 20, 33);
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		font: 0.15rem/0.2rem "微软雅黑";
+		border: 1px solid rgb(216, 20, 33);
+		border-radius: 0.05rem;
+	}
+	nav .toutiao ul li:nth-child(3){
+		width: 65%;
+	}
+	nav .toutiao ul li:nth-child(3) a{
+		display: block;
+		width: 100%;
+		height: 0.3rem;
+		position: relative;
+		z-index: 1;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		white-space: nowrap;
+		overflow: hidden;
+		color: rgb(53, 53, 53);
+		font: 0.16rem/0.3rem "微软雅黑";	
+	}
+	/* section 1*/
+	section:nth-of-type(1){
+		width: 100%;
+		overflow: hidden;
+	}
+	section div{
+		box-sizing: border-box;
+	}
+	section:nth-of-type(1)>div.left{
+		width: 39%;
+		border-right: 1px solid #e7e7e7;
+		float: left;
+	}
+	section:nth-of-type(1)>div.left a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	section:nth-of-type(1)>div.left a img{
+		width: 100%;
+		height: 100%;
+	}
+	section:nth-of-type(1)>div.right{
+		width: 61%;
+		float: left;
+	}
+	section:nth-of-type(1)>div.right ul{
+		width: 100%;
+		height: 50%;
+		display: flex;
+	}
+	section:nth-of-type(1)>div.right ul:nth-child(1){
+		border-bottom: 1px solid #e7e7e7;
+	}
+	section:nth-of-type(1)>div.right ul li{
+		flex: 1;
+	}
+	section:nth-of-type(1)>div.right ul li a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	section:nth-of-type(1)>div.right ul:nth-child(2) li:first-child{
+		border-right: 1px solid #e7e7e7;
+	}
+	section:nth-of-type(1)>div.right ul li a img{
+		width: 100%;
+		height: 100%;
+	}
+	/* section 2 */
+	section:nth-of-type(2){
+		width: 100%;
+		margin-top: 0.07rem;
+		background: #fff;
+	}
+	section:not(:first-of-type)>div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.06rem;
+		border-bottom: 1px solid #e7e7e7;,
+	}
+	section:nth-of-type(2) div img{
+		width: 6%;
+	}
+	section:nth-of-type(2) div p{
+		width: 15%;
+		text-align: center;
+		color: rgb(255, 53, 14);
+		font-size: 0.14rem;
+	}
+	section:nth-of-type(2) ul{
+		width: 100%;
+		display: flex;
+	}
+	section:nth-of-type(2) ul li{
+		box-sizing: border-box;
+		flex: 1;
+		border-bottom: 1px solid #e7e7e7;
+	}
+	section:nth-of-type(2) ul li:not(:first-child){
+		border-left: 1px solid #e7e7e7;
+	}
+	section:nth-of-type(2) ul li:first-child{
+		flex: 2;
+	}
+	section:nth-of-type(2) ul li a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	section:nth-of-type(2) ul li a img{
+		width: 100%;
+	}
+	/* section 3 */
+	section:nth-of-type(3){
+		width: 100%;
+		background: #fff;
+		margin-top: 0.07rem;
+	}
+	section:nth-of-type(3) div img{
+		width: 6%;
+	}
+	section:nth-of-type(3) div p{
+		width: 19%;
+		text-align: center;
+		color: rgb(209, 9, 9);
+		font-size: 0.14rem;
+	}
+	section:nth-of-type(3) ul{
+		width: 100%;
+		display: flex;
+	}
+	section:nth-of-type(3) ul li{
+		box-sizing: border-box;
+		flex: 1;
+		border-bottom: 1px solid #e7e7e7;
+	}
+	section:nth-of-type(3) ul li:not(:first-child){
+		border-left: 1px solid #e7e7e7;
+	}
+	section:nth-of-type(3) ul li a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	section:nth-of-type(3) ul li a img{
+		width: 100%;
+	}
+	/* footer */
+	footer{
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		border-top: 1px solid #e7e7e7;
+		background: #fff;
+	}
+	footer>ul{
+		width: 100%;
+		height: 100%;
+		display: flex;
+	}
+	footer>ul>li{
+		flex: 1;
+		height: 100%;
+	}
+	footer>ul>li a{
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding-top: 0.04rem;
+	}
+	footer>ul.foot>li a span{
+		width: 100%;
+		font-size: 0.22rem;
+		color: #5d656b;
+	}
+	footer>ul>li a p{
+		width: 100%;
+		font-size: 0.1rem;
+		color: #5d656b;
+		margin-bottom: 0;
+	}
+}
